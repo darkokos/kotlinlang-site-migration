@@ -2,7 +2,7 @@
   "name": "kotlinlang-site-migration",
   "private": true,
   "type": "module",
-  "browserlist": [
+  "browserslist": [
     "defaults, not ie > 0, edge > 18"
   ],
   "scripts": {
@@ -41,4 +41,3 @@
     "vite": "^7.1.7"
   }
 }
-
