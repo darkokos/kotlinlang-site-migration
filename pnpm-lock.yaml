@@ -11,6 +11,9 @@ importers:
       '@jetbrains/kotlin-web-site-ui':
         specifier: ^4.14.4
         version: 4.14.4(@rescui/checkbox@0.9.4(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4))(@rescui/focus-manager@0.1.17)(@rescui/icons@1.7.2(prop-types@15.8.1)(react@19.2.4))(@rescui/input@0.14.4(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4))(@rescui/tooltip@0.10.9(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@rescui/typography@0.24.3(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(react@19.2.4))(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(algoliasearch@4.27.0)(formik@2.4.9(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react-outside-click-handler@1.3.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-remove-scroll-bar@2.3.8(@types/react@19.2.14)(react@19.2.4))(react-scrollbar-size@5.0.0(react@19.2.4))(react@19.2.4)(sha.js@2.4.12)
+      '@react-hook/resize-observer':
+        specifier: ^2.0.2
+        version: 2.0.2(react@19.2.4)
       '@react-router/node':
         specifier: 7.12.0
         version: 7.12.0(react-router@7.12.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
@@ -23,24 +26,51 @@ importers:
       '@rescui/card':
         specifier: ^0.13.10
         version: 0.13.10(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4)
+      '@rescui/checkbox':
+        specifier: ^0.9.4
+        version: 0.9.4(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4)
       '@rescui/colors':
         specifier: ^0.2.12
         version: 0.2.12
+      '@rescui/focus-manager':
+        specifier: ^0.1.17
+        version: 0.1.17
       '@rescui/icons':
-        specifier: ^1.7.2
+        specifier: 1.x
         version: 1.7.2(prop-types@15.8.1)(react@19.2.4)
+      '@rescui/input':
+        specifier: ^0.14.4
+        version: 0.14.4(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4)
+      '@rescui/menu':
+        specifier: ^0.13.1
+        version: 0.13.1(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4)
+      '@rescui/switcher':
+        specifier: ^0.12.8
+        version: 0.12.8(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4)
       '@rescui/tab-list':
         specifier: ^0.16.3
         version: 0.16.3(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4)
+      '@rescui/tooltip':
+        specifier: ^0.10.9
+        version: 0.10.9(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@rescui/typography':
         specifier: ^0.24.3
         version: 0.24.3(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(react@19.2.4)
       '@rescui/ui-contexts':
         specifier: ^0.6.0
         version: 0.6.0(prop-types@15.8.1)(react@19.2.4)
+      algoliasearch:
+        specifier: ^4.27.0
+        version: 4.27.0
+      body-scroll-lock:
+        specifier: 4.0.0-beta.0
+        version: 4.0.0-beta.0
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
+      formik:
+        specifier: ^2.4.9
+        version: 2.4.9(@types/react@19.2.14)(react@19.2.4)
       highlight.js:
         specifier: ^11.11.1
         version: 11.11.1
@@ -53,9 +83,21 @@ importers:
       react-dom:
         specifier: ^19.2.4
         version: 19.2.4(react@19.2.4)
+      react-outside-click-handler:
+        specifier: ^1.3.0
+        version: 1.3.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react-remove-scroll-bar:
+        specifier: ^2.3.8
+        version: 2.3.8(@types/react@19.2.14)(react@19.2.4)
       react-router:
         specifier: 7.12.0
         version: 7.12.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react-scrollbar-size:
+        specifier: ^5.0.0
+        version: 5.0.0(react@19.2.4)
+      sha.js:
+        specifier: ^2.4.12
+        version: 2.4.12
     devDependencies:
       '@react-router/dev':
         specifier: 7.12.0
@@ -570,6 +612,21 @@ packages:
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
 
+  '@react-hook/latest@1.0.3':
+    resolution: {integrity: sha512-dy6duzl+JnAZcDbNTfmaP3xHiKtbXYOaz3G51MGVljh548Y8MWzTr+PHLOfvpypEVW9zwvl+VyKjbWKEVbV1Rg==}
+    peerDependencies:
+      react: '>=16.8'
+
+  '@react-hook/passive-layout-effect@1.2.1':
+    resolution: {integrity: sha512-IwEphTD75liO8g+6taS+4oqz+nnroocNfWVHWz7j+N+ZO2vYrc6PV1q7GQhuahL0IOR7JccFTsFKQ/mb6iZWAg==}
+    peerDependencies:
+      react: '>=16.8'
+
+  '@react-hook/resize-observer@2.0.2':
+    resolution: {integrity: sha512-tzKKzxNpfE5TWmxuv+5Ae3IF58n0FQgQaWJmcbYkjXTRZATXxClnTprQ2uuYygYTpu1pqbBskpwMpj6jpT1djA==}
+    peerDependencies:
+      react: '>=18'
+
   '@react-router/dev@7.12.0':
     resolution: {integrity: sha512-5GpwXgq4pnOVeG7l6ADkCHA1rthJus1q/A3NRYJAIypclUQDYAzg1/fDNjvaKuTSrq+Nr3u6aj2v+oC+47MX6g==}
     engines: {node: '>=20.0.0'}
@@ -667,6 +724,13 @@ packages:
 
   '@rescui/menu@0.13.1':
     resolution: {integrity: sha512-YYrJCLEZUaf7FGhHgGLoGzH5KqW3gxTR14w2PgUAi1x8Vvi/E9LZFPd6uH2vSenuu47xt3Mm9yESI9Mz+AWtNA==}
+    peerDependencies:
+      '@rescui/ui-contexts': ^0.6.0
+      prop-types: ^15
+      react: '>=16.8.0 <20'
+
+  '@rescui/switcher@0.12.8':
+    resolution: {integrity: sha512-M2J8wRhgo42EECWByd0GWnfBZMMxSbP/d6x5lmaNdeJWxosPdRX7QGt8Z1uQoRSClAyxowkA65tcvEVmLH6Y3Q==}
     peerDependencies:
       '@rescui/ui-contexts': ^0.6.0
       prop-types: ^15
@@ -909,6 +973,9 @@ packages:
   body-parser@1.20.4:
     resolution: {integrity: sha512-ZTgYYLMOXY9qKU/57FAo8F+HA2dGX7bqGc71txDRC1rS4frdFI5R7NhluHxH6M0YItAP0sHB4uqAOcYKxO6uGA==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
+
+  body-scroll-lock@4.0.0-beta.0:
+    resolution: {integrity: sha512-a7tP5+0Mw3YlUJcGAKUqIBkYYGlYxk2fnCasq/FUph1hadxlTRjF+gAcZksxANnaMnALjxEddmSi/H3OR8ugcQ==}
 
   browserslist@4.28.1:
     resolution: {integrity: sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA==}
@@ -2587,6 +2654,20 @@ snapshots:
 
   '@popperjs/core@2.11.8': {}
 
+  '@react-hook/latest@1.0.3(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@react-hook/passive-layout-effect@1.2.1(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+
+  '@react-hook/resize-observer@2.0.2(react@19.2.4)':
+    dependencies:
+      '@react-hook/latest': 1.0.3(react@19.2.4)
+      '@react-hook/passive-layout-effect': 1.2.1(react@19.2.4)
+      react: 19.2.4
+
   '@react-router/dev@7.12.0(@react-router/serve@7.12.0(react-router@7.12.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3))(@types/node@22.19.15)(jiti@2.6.1)(lightningcss@1.31.1)(react-router@7.12.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(sass-embedded@1.97.3)(sass@1.97.3)(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.15)(jiti@2.6.1)(lightningcss@1.31.1)(sass-embedded@1.97.3)(sass@1.97.3))':
     dependencies:
       '@babel/core': 7.29.0
@@ -2722,6 +2803,15 @@ snapshots:
       '@rescui/ui-contexts': 0.6.0(prop-types@15.8.1)(react@19.2.4)
       classnames: 2.5.1
       nanoid: 3.3.11
+      prop-types: 15.8.1
+      react: 19.2.4
+
+  '@rescui/switcher@0.12.8(@rescui/ui-contexts@0.6.0(prop-types@15.8.1)(react@19.2.4))(prop-types@15.8.1)(react@19.2.4)':
+    dependencies:
+      '@babel/runtime-corejs3': 7.29.0
+      '@rescui/ui-contexts': 0.6.0(prop-types@15.8.1)(react@19.2.4)
+      '@rescui/use-resize-observer': 0.3.0(react@19.2.4)
+      classnames: 2.5.1
       prop-types: 15.8.1
       react: 19.2.4
 
@@ -2969,6 +3059,8 @@ snapshots:
       unpipe: 1.0.0
     transitivePeerDependencies:
       - supports-color
+
+  body-scroll-lock@4.0.0-beta.0: {}
 
   browserslist@4.28.1:
     dependencies:

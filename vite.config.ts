@@ -9,7 +9,8 @@ export default defineConfig({
       "~": path.resolve(__dirname, "app"),
     },
   },
+  define: { global: "globalThis" },
   ssr: {
-    noExternal: [/@rescui\/.*/],
+    noExternal: [/@rescui\/.*/, /@jetbrains\/.*/],
   },
 });
