@@ -2,6 +2,9 @@
   "name": "kotlinlang-site-migration",
   "private": true,
   "type": "module",
+  "browserlist": [
+    "defaults, not ie > 0, edge > 18"
+  ],
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
@@ -38,3 +41,4 @@
     "vite": "^7.1.7"
   }
 }
+
