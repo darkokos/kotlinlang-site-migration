@@ -1,11 +1,4 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-  useMatches,
-} from "react-router";
+import { Links, Meta, Outlet, Scripts, useMatches } from "react-router";
 import { ThemeProvider } from "@rescui/ui-contexts";
 import GlobalHeader from "@jetbrains/kotlin-web-site-ui/out/components/header/index.js";
 import GlobalFooter from "@jetbrains/kotlin-web-site-ui/out/components/footer/index.js";
@@ -15,7 +8,21 @@ import "@jetbrains/kotlin-web-site-ui/out/components/footer/index.css";
 import { releases } from "~/data/releases";
 import stylesV2Href from "~/styles/styles-v2.scss?url";
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function ErrorBoundary() {
+  return (
+    <html lang="en">
+      <head>
+        <title>404 Not Found</title>
+      </head>
+      <body>
+        <h1>404 Not Found</h1>
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+
+export default function App() {
   const matches = useMatches();
 
   const restyledValue = matches
@@ -124,7 +131,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             searchConfig={{}}
             dropdownTheme={dropdownTheme}
           />
-          {children}
+          <Outlet />;
           <ThemeProvider theme="dark">
             <GlobalFooter />
           </ThemeProvider>
@@ -134,8 +141,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </body>
     </html>
   );
-}
-
-export default function App() {
-  return <Outlet />;
 }
