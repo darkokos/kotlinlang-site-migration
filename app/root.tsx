@@ -131,7 +131,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             searchConfig={{}}
             dropdownTheme={dropdownTheme}
           />
-          <Outlet />;
+          <Outlet />
           <ThemeProvider theme="dark">
             <GlobalFooter />
           </ThemeProvider>
