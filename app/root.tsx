@@ -130,7 +130,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </ThemeProvider>
         </div>
 
-        <ScrollRestoration />
         <Scripts />
       </body>
     </html>
